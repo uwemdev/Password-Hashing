@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Hasher App</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <h1>Password Hashing App</h1>
+
+            <form>
+                <label for="password">Enter Password:</label>
+                <div class="input">
+                    <input type="password" id="password" placeholder="Enter your password">
+                    <a href="#" onclick="showPassword()">&#x1F441;</a>
+                </div>
+                <button type="button" onclick="hashPassword()">Hash Password</button>
+            </form>
+
+            <div class="result" style="display: none;">
+                <h3>Hashed Password:</h3>
+                <p  id="hashedPassword"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script JS -->
+    <script src="./script.js"></script>
+</body>
+</html>
